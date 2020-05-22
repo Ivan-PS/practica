@@ -1,32 +1,35 @@
-public class nomCognom{
+public class ivanPelegri{
 
     private int edat;
     private String tel;
     
     public IvanPelegri(){} 
 
-    IvanPelegri(int e, String t){
+    ivanPelegri(int e, String t){
         edat=e;
         tel=t;
 
     }
 
-    getEdat(){
+    public int getEdat(){
         return this.edat;
     }
-    getTel(){
+    public String getTel(){
         return this.tel;
     }
-    setEdat(e){
+    setEdat(int e){
         this.edat = e;
     }
-    setEdat(t){
+    setEdat(String t){
         this.tel = t;
     }
     public String toString(){
         return "EDAT: " + this.edat +  "TELEFON: " + this.tel;
     }
-    public boolean equals(nomCognom object){
-        if(this == object) return true;
+    public boolean equalsEdat(int e){
+        if(this.edat == e) return true;
+    }
+    public boolean equalsTel(String t){
+        if(this.tel.equals(t)) return true;
     }
 }
